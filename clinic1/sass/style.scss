@@ -1,2 +1,16 @@
-/*!各sassのインポート用*/
+/*!各sassのインポート*/
+@import "_main";
+@import "_mixin";
+@import "_module";
+@import "_reset";
+@import "_setting";
 
+body {
+   background-color: lightblue;
+   @include media(pc) {
+     background-color: lightpink;
+    }
+   @include media(sp) {
+     background-color: lightgray;
+  }
+}

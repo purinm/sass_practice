@@ -1,1 +1,11 @@
 /*!ミックスインの定義ファイル*/
+@charset "UTF-8";
+
+//mapで複数のbreakpointを定義して管理
+@mixin media($breakpoint){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+
+

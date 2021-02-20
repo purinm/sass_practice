@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*!各sassのインポート*/
+/*!ミックスインの定義ファイル*/
+/*!共通のモジュールやパーツ*/
 /* Box sizing rules */
 *,
 *::before,
@@ -60,7 +64,7 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
   *,
   *::before,
@@ -69,5 +73,21 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: lightblue;
+}
+
+@media only screen and (max-width: 961px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightgray;
   }
 }
