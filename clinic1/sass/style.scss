@@ -5,12 +5,25 @@
 @import "_reset";
 @import "_setting";
 
+/*! カラー */
+
 body {
-   background-color: lightblue;
+   color:$color-main;
+   background-color: #fff;
    @include media(pc) {
      background-color: lightpink;
     }
    @include media(sp) {
      background-color: lightgray;
   }
+}
+
+/*! タイトル */
+
+.schedule h3,.info h3{
+  color:$color-sub;
+ }
+
+.subject-title__text,.question-title__text,.greeting-title__text{
+  @include title__text;
 }

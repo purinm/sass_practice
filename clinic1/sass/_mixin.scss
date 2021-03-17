@@ -8,4 +8,7 @@
   }
 }
 
-
+@mixin title__text{
+  font-weight: bolder;
+  text-align: left;
+}

@@ -8,72 +8,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv=""  content="">
   <meta itemprop = "">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel = "stylesheet" href = "css/style.css">
-  <link rel = "stylesheet" href = "css/main.css">
 </head>
+<script src= "main.js"></script>
 <body>
   <header>
-    <div class="header-top">
-      <p>012-345-6789</p>
-      <p>アクセス</p>
-    </div>
-
-    <div class="header-bottom">
-      <h1><a href = ""><img src = "" alt = "クリニック" class = "header-logo"></a></h1>
-      <nav>
-        <ul>
-          <li class="">はじめての方へ</li>
-          <li class="">クリニックについて</li>
-          <li class="">診療のご案内</li>
-          <li class="">よくある質問</li>
-          <li class="">採用情報</li>
-        </ul>
-      </nav>
-      <a href = "">自分で取り組む生活週間予防！＞＞</a>
-    </div>
+    <picture class="header-logo">
+          <h1>クリニック</h1>
+          <!-- <img src = "" alt = "クリニック" class = "logo"> -->
     
+    </picture>
+    <div class="header-container">
+      <div class="header-top">
+        <p>012-345-6789</p>
+        <p>アクセス</p>
+      </div>
+      <div class="header-bottom">
+        <nav>
+          <ul>
+            <li class=""><a>はじめての方へ</a></li>
+            <li class=""><a>クリニックについて</a></li>
+            <li class=""><a>診療のご案内</a></li>
+            <li class=""><a>よくある質問</a></li>
+            <li class=""><a>採用情報</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
+  
   <main>
-    <section class="info">
-      <div class="news">
-        <p>information</p>
-        <ul  class ="news-list"> 
+    <section class="sraid-images">
+      <p><a href = "">自分で取り組む生活週間予防！＞＞</a></p>
+    </section>
+   
+
+    <section  class="news-container">
+      <div class="info">
+        <h3>information</h3>
+        <ul  class ="info-list"> 
           <li>
             <a href = "">
-              <span class ="news-list-date">2020.10.15
-              <span class ="news-list-days">Mon</span>
-              11月休診のお知らせ。
-          </a>
-          </li>
-          <li>
-            <a href = "">
-              <span class ="news-list-date">2020.11.15
-              <span class ="news-list-days">Tue</span>
-              12月休診のお知らせ。
+              <p class="info-list__day">2021.2.15  <span class="info-list__date">
+             Wed</span></p><p class="info-list__text">3月休診のお知らせ。</p>
             </a>
           </li>
           <li>
             <a href = "">
-              <span class ="news-list-date">2020.12.15
-              <span class ="news-list-days">Wed</span></span>
-              1月休診のお知らせ。
+              <p class="info-list__day">2021.1.15  <span class="info-list__date">
+             Wed</span></p><p class="info-list__text">2月休診のお知らせ。</p>
+            </a>
+          </li>
+          <li>
+            <a href = "">
+              <p class="info-list__day">2020.12.15  <span class="info-list__date">
+             Tue</span></p><p class="info-list__text">1月休診のお知らせ。</p>
+            </a>
+          </li>
+          <li>
+            <a href = "">
+              <p class="info-list__day">2020.11.15  <span class="info-list__date">
+             Fri</span></p><p class="info-list__text">12月休診のお知らせ。</p>
+            </a>
+          </li>
+          <li>
+            <a href = "">
+              <p class="info-list__day">2020.10.15  <span class="info-list__date">
+             Tue</span></p><p class="info-list__text">11月休診のお知らせ。コロナ感染症について。</p>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="schedule">
-        <p>schedule</p>
-        <table>
+        <h3>schedule</h3>
+        <table class="schedule-table">
           <thead>
             <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th></tr>
           </thead>
           <tbody>
-            <tr><td>9:00~13:00</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>／</td></tr>
-            <tr><td>15:00~19:00</td><td>○</td><td>○</td><td>／</td><td>○</td><td>○</td><td>／</td><td>／</td></tr>
+            <tr><td class="schedule-table__time">9:00~13:00</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>-</td></tr>
+            <tr><td class="schedule-table__time">15:00~19:00</td><td>○</td><td>○</td><td>-</td><td>○</td><td>○</td><td>-</td><td>-</td></tr>
           </tbody>
         </table>
-        <p>※水曜午後・土曜午後・日曜・祝日はお休みです。</p>
+        <p class="schedule-text">※水曜午後・土曜午後・日曜・祝日は休診。</p>
       </div> 
     </section>
 
@@ -81,7 +100,9 @@
       <div class="greeting-container">
         <h2 class="greeting-title__text">ごあいさつ</h2>
         <p class="greeting-title__expranation">当院では内科・呼吸器内科・アレルギー科を専門としています。生活に根ざした症状を患者様の声に耳を傾け納得して受診していただけるようにスタッフ一同努力して参ります。地域のみなさまから愛され信頼されるクリニックでありたいと思っております。</p>
+        <p class="greeting-btn"><a href="#" >クリニック紹介</a></p>
       </div>
+      
     </section>
 
     <section class="subject">
@@ -90,13 +111,38 @@
         <p class="subject-title__expranation">当院では内科・呼吸器内科・アレルギー科を専門としています。</p>
       </div>
       <div class="subject-list">
-        <ul>
-          <li class=""><a href=""><img src =""><p>内科</p></img></a></li>
-          <li class=""><a href=""><img src =""><p>呼吸器内科</p></img></a></li>
-          <li class=""><a href=""><img src =""><p>アレルギー・花粉症</p></img></a></li>
-          <li class=""><a href=""><img src =""><p>自費診療</p></img></a></li>
-          <li class=""><a href=""><img src =""><p>各種検診</p></img></a></li>
-          <li class=""><a href=""><img src =""><p>予防接種</p></img></a></li>
+        <ul >
+          <li class="">
+            <a href="">
+              <div class="subject-img"></div>
+              <p>呼吸器内科</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="">
+              <div class="subject-img"></div>
+              <p>アレルギー・花粉症
+              </p>
+            </a>
+          </li>
+          <li class="">
+            <a href="">
+              <div class="subject-img"></div>
+              <p>自費診療</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="">
+              <div class="subject-img"></div>
+              <p>各種検診</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="">
+              <div class="subject-img"></div>
+              <p>予防接種</p>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -106,48 +152,62 @@
         <h2 class="question-title__text">よくある質問</h2>
         <p class="question-title__expranation">受診前の疑問や心配ごとは誰しもが持つもの。少しでも解消でき安心して受診できるようにサポートしたいと思っています。</p>
       </div>
-      <div class="">
-        <dl> 
-          <dt>予約なしで受診できますか？</dt>
-          <dd>受診できます。診療終了30分前までにご来院ください。</dd>
-        <dl> 
-        <dl> 
-          <dt>健康保険は使えますか？</dt>
-          <dd>はい。当院は保険医療機関なので各種保険が使用できます。</dd>
-        <dl> 
-        <dl> 
-          <dt>診察時間の予約はできますか？</dt>
-          <dd>できます。待ち時間短縮のためにも予約をおすすめいたします。</dd>
-        <dl> 
-        <dl> 
-          <dt>駐車場はありますか？</dt>
-          <dd>ありません。</dd>
-        <dl> 
-        <dl> 
-          <dt>会計はカード支払いできますか？</dt>
-          <dd>ご精算金額が1万円以上の場合とさせていただいています。（分割払いはできません）
-            </dd>
-        <dl> 
+     
+
+      <div class="qa-list" id="accordion">
+        <dl class="qa" > 
+          <dt class="question-list__text" >予約なしで受診できますか？</dt>
+          <dd class="answer">受診できます。診療終了30分前までにご来院ください。</dd>
+        </dl> 
+        <dl class="qa"> 
+          <dt class="question-list__text">健康保険は使えますか？</dt>
+          <dd class="answer">はい。当院は保険医療機関なので各種保険が使用できます。</dd>
+        </dl> 
+        <dl class="qa"> 
+          <dt class="question-list__text">診察時間の予約はできますか？</dt>
+          <dd class="answer">できます。待ち時間短縮のためにも予約をおすすめいたします。</dd>
+        </dl> 
+        <dl class="qa"> 
+          <dt class="question-list__text">駐車場はありますか？</dt>
+          <dd class="answer">ありません。</dd>
+        </dl> 
+        <dl class="qa"> 
+          <dt class="question-list__text">会計はカード支払いできますか？</dt>
+          <dd class="answer">ご精算金額が1万円以上の場合とさせていただいています。（分割払いはできません）</dd>
+        </dl> 
       </div>
-    </section>
-    <section>
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
-    </section>
-    <section>
-      <div class=""></div>
-      <div class=""></div>
-      <div class=""></div>
     </section>
   </main>
   <footer>
-    <ul>
-      <li class=""><a href= "">サイトマップ</a></li>
-      <li class=""><a href= "">プライバシーポリシー</a></li>
-      <li class=""><a href= ""></a></li>
-      <li class=""><a href= ""></a></li>
-    </ul>
+    <div class="footer-container">
+      <div class="footer-contents">
+        <ul>
+          <li><a href= "">サイトマップ</a></li>
+          <li><a href= "">プライバシーポリシー</a></li>
+          <li><a href= "">医師紹介</a></li>
+          <li><a href= "">オンライン予約</a></li>
+          <li><a href= "">採用サイト</a></li>
+        </ul>
+      </div>
+      <div class="footer-contents">
+        <ul>
+          <li><a href= "">スタッフブログ</a></li>
+          <li><a href= "">コラム</a></li>
+          <li><a href= ""></a></li>
+          <li><a href= ""></a></li>
+          <li><a href= ""></a></li>
+        </ul>
+      </div>
+     </div>
+     <div class="sns-logos">
+       <ul>
+         <li class="twitter-logo"><a href=""><img src="../clinic1/images/2021 Twitter logo - blue.png " alt="twitter-logo"></a></li>
+         <li class="facebook-logo"><a href=""><img src="../clinic1/images/f_logo_RGB-Blue_58.png" alt="facebook-logo "></a></li>
+         <li class="line-logo"><a href=""><img src="../clinic1/images/LINE_APP.png" alt="line-logo "></a></li>
+         <li class="instagram-logo"><a href=""><img src="../clinic1/images/Instagram_Glyph_Gradient_RGB.png" alt="instagram-logo "></a></li>
+        </ul>
+      </div>
+      <p><small>2021@...inc</small></p>
   </footer>
 </body>
 </html>

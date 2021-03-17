@@ -1,3 +1,381 @@
+header{
+  display: flex;
+  justify-content:space-between;
+  height:20vh;
+}
+.header-log{
+  h1{
+  width:300px;
+  background-color: lightgray ;
+ }
+}
+.header-container{
+  display: inline-block;
+}
+.header-top{
+ padding:20px 30px;
+ display: flex;
+ justify-content:flex-end;
+ p{
+   padding-right: 50px;
+  }
+}
+.header-bottom nav ul{
+    display: flex;
+    justify-content:flex-end;
+    li{
+      cursor: pointer;
+      white-space:nowrap;
+      list-style: none;
+      padding: 0 40px;
+      border: {
+        right: gray 2px solid;
+        right-style: dashed;
+      }
+      &:last-child{
+        border-style: none;
+      }
+      a{
+        &:hover{
+          opacity: 0.5;
+          transition: 0.3s ;
+        }
+      }
+    }
+  }
+
+ 
+.sraid-images{
+    margin:0 50px;
+    border-radius: 30px;
+    max-width: 100%;
+    height: 60vh;
+    box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.4);
+    position: relative;
+    background: {
+      image: url(../images/クリニック１.jpg);
+      repeat:no-repeat;
+      size: cover;
+      position: center;
+    }
+  p{
+      padding: 8px 30px;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 10px;
+      z-index: 10;
+      position: relative;
+      top:380px;
+      left:80px;
+      &:hover{
+        background-color: lightgray;
+        transition: 0.3s ;
+       }
+      a{
+        color:#000;
+        font-size: 14px;
+        text-decoration: none;
+        &:visited{
+          color:inherit;
+        }
+      }
+   }
+ }
+.news-container{
+  display: flex;
+  justify-content: space-around;
+  max-width:100%;
+  margin:0 auto 50px;
+  padding:50px;
+  font-size: 18px;
+}
+.info{
+  margin:0 30px 0 0;
+  width:50%;
+}
+.info-list{
+   width:calc(50vw - 100px);
+   padding:0;
+    line-height: 38px;
+    height:300px;
+    overflow-x: auto;
+    overflow-y: auto;
+  li{
+    cursor: pointer;
+    list-style: none;
+    padding:25px 0 10px 0;
+    a{
+      display: flex;
+      border-bottom: 1px solid lightgray;
+      white-space:nowrap;
+      justify-content: flex-start;
+      text-decoration: none;
+      &:visited{
+        color:inherit;
+      }
+      .info-list__day{
+        padding-left:10px;
+        width:150px;
+
+        .info-list__date{
+        padding-right:30px;
+        }
+      }
+    }
+  }
+}
+  
+.schedule{
+  @extend .info;
+  .schedule-text{
+      padding:30px 0 0 ;
+      font-weight: normal;
+      text-align: right;
+  }
+  td,th{
+    padding:8px 15px;
+    border-right:1px solid lightgray;
+  }
+}  
+  .schedule-table{
+    margin:30px 0 0 0 ;
+    border-collapse: collapse;
+    text-align: center;  
+  }
+
+    
+.greeting{
+  position:relative;
+  height:50vh;
+  margin:0 0 50px 0;
+  background: {
+    image: linear-gradient(to top left,transparent 40%,rgb(245, 244, 237) 60% ),url(../images/クリニック１.jpg);
+    repeat:no-repeat;
+    size: cover;
+    position: center;
+  }
+}
+.greeting-container{
+  width:50vw;
+  padding:0 50px ;
+  position: absolute;
+  top:50px;
+}
+.greeting-title__text {
+  line-height: 32px;
+  padding:0 0 30px 0;
+  .greeting-title__expranation{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+  }
+}
+.greeting-btn{
+  display: flex;
+  justify-content: flex-end;
+  a {
+    padding: 8px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    color:#000;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover{
+      background-color: lightgray;
+      transition: 0.3s ;
+    }
+    &:visited{
+      color:inherit;
+    }
+  }
+ }
+ .subject{
+   padding:50px;
+   margin:0 0 50px 0;
+ }
+ .subject-container{
+  width:50vw;
+  p,h2{
+    padding:0 0 30px 0;
+  }
+ }
 
 
+.subject-list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    li{  
+      list-style:none;
+      &:hover{
+        opacity: 50%;
+        transition-duration: 0.4s ;
+       }
+      &:visited{
+        color:inherit;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        .subject-img{
+          image: url(../images/クリニック１.jpg);
+          width:150px;
+          height:150px;
+          border-radius: 50%;
+          background-color:skyblue;
+        }
+        p{
+          padding:10px 0 0 0 ;
+          text-align: center;
+          white-space: nowrap;
+          color:#000;
+        }
+      }
+    }
+  }
+.question{
+  padding:50px;
+  margin:0 0 50px 0;
+}
+.question-container p,h2{
+    padding:0 0 30px 0;
+}
+
+.qa-list dl {
+  position: relative;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+    &::before {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      margin: auto;
+      content:'' ;
+      transform: rotate(135deg);
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+    }
+  }
+dt {
+  position: relative;
+  margin: 0;
+  padding: 0 0 10px 50px;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+    &::before {
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      font-size: 22px;
+      line-height: 1;
+    content: 'Q.';
+    color: #3285bf;
+  }
+}
+
+dd {
+  display: none;
+  position: relative;
+  height: auto;
+  margin: 20px 0 0;
+  padding: 10px 0 10px 50px;
+  opacity: 0;
+  transition-duration: 1.0s;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 2px;
+    font-size: 22px;
+    line-height: 1;
+    content: 'A.';
+    font-weight: bold;
+    color: #3285bf;
+  }
+}
+  .hidden{
+    opacity: 1;
+    display: block;
+  }
+  
+footer{
+  padding:50px;
+  background-color: rgb(241, 239, 239);
+}
+  .footer-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  
+    .footer-contents {
+      width:250px;
+      margin:0 80px 100px 0 ;
+      ul{
+        padding:0;
+        margin:0;
+        
+        li{  
+          line-height: 40px;
+          list-style:none;
+        
+          &:hover{
+            opacity: 50%;
+            transition-duration: 0.4s ;
+          }
+          &:visited{
+            color:inherit;
+          }
+          a{
+            color:gray;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    p {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .sns-logos{
+    ul{
+      display: flex;
+      justify-content:flex-end;
+      .twitter-logo{
+        list-style: none;
+        margin: 0 60px 0 0 ;
+
+        a{
+          display: inline-block;
+          width:60px;
+          height:60px;
+          background-color: mintcream;
+          border-radius: 50%;
+          position: absolute;
+          img{
+              position: relative;
+              top:15px;
+              left:15px;
+              width:30px;
+              height:30px;
+            }
+          }
+        }
+      .facebook-logo ,.line-logo, .instagram-logo{
+        list-style: none;
+        margin: 5px 0 0 20px ;
+        a img{
+          width: 50px;
+          height:50px;
+        }
+      }
+    }
+  }
 

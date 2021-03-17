@@ -1,5 +1,422 @@
 @charset "UTF-8";
 /*!各sassのインポート*/
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.header-log h1 {
+  width: 300px;
+  background-color: lightgray;
+}
+
+.header-container {
+  display: inline-block;
+}
+
+.header-top {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-top p {
+  padding-right: 50px;
+}
+
+.header-bottom nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-bottom nav ul li {
+  cursor: pointer;
+  white-space: nowrap;
+  list-style: none;
+  padding: 0 40px;
+  border-right: gray 2px solid;
+  border-right-style: dashed;
+}
+
+.header-bottom nav ul li:last-child {
+  border-style: none;
+}
+
+.header-bottom nav ul li a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.sraid-images {
+  margin: 0 50px;
+  border-radius: 30px;
+  max-width: 100%;
+  height: 60vh;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-image: url(../images/クリニック１.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sraid-images p {
+  padding: 8px 30px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 10;
+  position: relative;
+  top: 380px;
+  left: 80px;
+}
+
+.sraid-images p:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+.sraid-images p a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sraid-images p a:visited {
+  color: inherit;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto 50px;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.info, .schedule {
+  margin: 0 30px 0 0;
+  width: 50%;
+}
+
+.info-list {
+  width: calc(50vw - 100px);
+  padding: 0;
+  line-height: 38px;
+  height: 300px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.info-list li {
+  cursor: pointer;
+  list-style: none;
+  padding: 25px 0 10px 0;
+}
+
+.info-list li a {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  white-space: nowrap;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.info-list li a:visited {
+  color: inherit;
+}
+
+.info-list li a .info-list__day {
+  padding-left: 10px;
+  width: 150px;
+}
+
+.info-list li a .info-list__day .info-list__date {
+  padding-right: 30px;
+}
+
+.schedule .schedule-text {
+  padding: 30px 0 0;
+  font-weight: normal;
+  text-align: right;
+}
+
+.schedule td, .schedule th {
+  padding: 8px 15px;
+  border-right: 1px solid lightgray;
+}
+
+.schedule-table {
+  margin: 30px 0 0 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.greeting {
+  position: relative;
+  height: 50vh;
+  margin: 0 0 50px 0;
+  background-image: linear-gradient(to top left, transparent 40%, #f5f4ed 60%), url(../images/クリニック１.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.greeting-container {
+  width: 50vw;
+  padding: 0 50px;
+  position: absolute;
+  top: 50px;
+}
+
+.greeting-title__text {
+  line-height: 32px;
+  padding: 0 0 30px 0;
+}
+
+.greeting-title__text .greeting-title__expranation {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.greeting-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.greeting-btn a {
+  padding: 8px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.greeting-btn a:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+.greeting-btn a:visited {
+  color: inherit;
+}
+
+.subject {
+  padding: 50px;
+  margin: 0 0 50px 0;
+}
+
+.subject-container {
+  width: 50vw;
+}
+
+.subject-container p, .subject-container h2 {
+  padding: 0 0 30px 0;
+}
+
+.subject-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.subject-list ul li {
+  list-style: none;
+}
+
+.subject-list ul li:hover {
+  opacity: 50%;
+  transition-duration: 0.4s;
+}
+
+.subject-list ul li:visited {
+  color: inherit;
+}
+
+.subject-list ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.subject-list ul li a .subject-img {
+  image: url(../images/クリニック１.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+
+.subject-list ul li a p {
+  padding: 10px 0 0 0;
+  text-align: center;
+  white-space: nowrap;
+  color: #000;
+}
+
+.question {
+  padding: 50px;
+  margin: 0 0 50px 0;
+}
+
+.question-container p, h2 {
+  padding: 0 0 30px 0;
+}
+
+.qa-list dl {
+  position: relative;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.qa-list dl::before {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: auto;
+  content: '';
+  transform: rotate(135deg);
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+dt {
+  position: relative;
+  margin: 0;
+  padding: 0 0 10px 50px;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+}
+
+dt::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 22px;
+  line-height: 1;
+  content: 'Q.';
+  color: #3285bf;
+}
+
+dd {
+  display: none;
+  position: relative;
+  height: auto;
+  margin: 20px 0 0;
+  padding: 10px 0 10px 50px;
+  opacity: 0;
+  transition-duration: 1.0s;
+}
+
+dd::before {
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 2px;
+  font-size: 22px;
+  line-height: 1;
+  content: 'A.';
+  font-weight: bold;
+  color: #3285bf;
+}
+
+.hidden {
+  opacity: 1;
+  display: block;
+}
+
+footer {
+  padding: 50px;
+  background-color: #f1efef;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-container .footer-contents {
+  width: 250px;
+  margin: 0 80px 100px 0;
+}
+
+.footer-container .footer-contents ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container .footer-contents ul li {
+  line-height: 40px;
+  list-style: none;
+}
+
+.footer-container .footer-contents ul li:hover {
+  opacity: 50%;
+  transition-duration: 0.4s;
+}
+
+.footer-container .footer-contents ul li:visited {
+  color: inherit;
+}
+
+.footer-container .footer-contents ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-container p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sns-logos ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sns-logos ul .twitter-logo {
+  list-style: none;
+  margin: 0 60px 0 0;
+}
+
+.sns-logos ul .twitter-logo a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: mintcream;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sns-logos ul .twitter-logo a img {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.sns-logos ul .facebook-logo, .sns-logos ul .line-logo, .sns-logos ul .instagram-logo {
+  list-style: none;
+  margin: 5px 0 0 20px;
+}
+
+.sns-logos ul .facebook-logo a img, .sns-logos ul .line-logo a img, .sns-logos ul .instagram-logo a img {
+  width: 50px;
+  height: 50px;
+}
+
 /*!ミックスインの定義ファイル*/
 /*!共通のモジュールやパーツ*/
 /* Box sizing rules */
@@ -76,8 +493,10 @@ select {
   }
 }
 
+/*! カラー */
 body {
-  background-color: lightblue;
+  color: #000;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 961px) {
@@ -90,4 +509,14 @@ body {
   body {
     background-color: lightgray;
   }
+}
+
+/*! タイトル */
+.schedule h3, .info h3, .schedule h3 {
+  color: blue;
+}
+
+.subject-title__text, .question-title__text, .greeting-title__text {
+  font-weight: bolder;
+  text-align: left;
 }
